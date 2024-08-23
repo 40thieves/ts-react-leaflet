@@ -2,6 +2,8 @@
 
 Minimal repro demonstrating a typescript error with [react-leaflet](https://github.com/PaulLeCam/react-leaflet).
 
+Note that the `tsconfig.json` in this project sets the [`preserve` setting for the `module` option](https://www.typescriptlang.org/docs/handbook/modules/reference.html#preserve), which appears to be recommended when using a frontend bundler.
+
 ## Steps to reproduce
 
 1. `npm install`
