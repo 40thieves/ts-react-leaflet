@@ -2,7 +2,12 @@
 
 Minimal repro demonstrating a typescript error with [react-leaflet](https://github.com/PaulLeCam/react-leaflet).
 
-Running a TS check (i.e. `--noEmit`) with this code produces these errors:
+## Steps to reproduce
+
+1. `npm install`
+2. `npm run check`
+
+This runs a TS check (i.e. `--noEmit`) and produces the following errors:
 
 ```
 node_modules/react-leaflet/lib/LayersControl.d.ts:9:65 - error TS2307: Cannot find module '@react-leaflet/core/lib/context' or its corresponding type declarations.
@@ -32,8 +37,3 @@ Errors  Files
      3  node_modules/react-leaflet/lib/LayersControl.d.ts:9
      1  node_modules/react-leaflet/lib/SVGOverlay.d.ts:11
 ```
-
-## Steps to reproduce
-
-1. `npm install`
-2. `npm run check`
